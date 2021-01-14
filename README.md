@@ -9,10 +9,6 @@ Freshshop already owns the frontend part of the project. You must now implement 
 
 Find instruction [here](https://github.com/becodeorg/BXL-Johnson-5.25/tree/master/3.The-Mountain/04-OOP-webShop)
 
-## My work on github:
-
- [My work]()
- 
- ## My work .tk:
+ ## My work on heroku
  
  [My work]()
