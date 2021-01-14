@@ -1,0 +1,39 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "## Project mission Freshshop is your new customer. They specialize in organic food and biodegradable bikes. Their store in Saint-Gilles is so profitable that they've opened another just below Thomas's apartment. To celebrate, they want to launch an e-commerce website at the same time.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisRodrigues8019/OOP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisRodrigues8019/OOP/issues"
+  },
+  "homepage": "https://github.com/LuisRodrigues8019/OOP#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.9",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
