@@ -49,7 +49,7 @@ app.use(expressEjsLayout);
 //Routes
 app.use('/',require('./routes/index'));
 app.use('/users', require('./routes/users'));
-
 app.use('/newletters',require('./routes/newletters'));
+//app.use('/product-seeder',require('./routes/product-seeder'));
 
 app.listen(3000); 

@@ -3,8 +3,7 @@ const validator = require('validator');
         const newsletter = new mongoose.Schema({
                 mail:{
                         type  : String,
-                        required : true
-                        
+                        required : true   
                     } 
                        
         },{

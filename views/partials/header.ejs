@@ -28,8 +28,21 @@
 							<option>Register Here</option>
 							<option>Sign In</option>
                         </select> -->
-                        <a href="/login" id="login-register" class="selectpicker show-tick form-control text-white" style="background-color: #b0b435;">login/subscribe <a></a>
-					</div>
+                        <% if (typeof user!= 'undefined'){%>
+                            <p> Welcome <%= user.name %> </p>
+                            <a href="users/logout" id="login-register" class="selectpicker show-tick form-control text-white" style="background-color: #b0b435;">logout</a>
+                            <%
+                           }else{
+                            %>
+                            <a href="/login" id="login-register" class="selectpicker show-tick form-control text-white" style="background-color: #b0b435;">login</a>
+                            <a href="/register" id="login-register" class="selectpicker show-tick form-control text-white" style="background-color: #b0b435;">Register</a>
+                            <%
+
+                        }
+                        %>
+        
+                        
+                    </div>
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
@@ -88,16 +101,16 @@
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
-								<li><a href="shop.ejs">Sidebar Shop</a></li>
-								<li><a href="shop-detail.ejs">Shop Detail</a></li>
-                                <li><a href="cart.ejs">Cart</a></li>
-                                <li><a href="checkout.ejs">Checkout</a></li>
-                                <li><a href="my-account.ejs">My Account</a></li>
-                                <li><a href="wishlist.ejs">Wishlist</a></li>
+								<li><a href="/shop">Sidebar Shop</a></li>
+								<li><a href="/shop-detail">Shop Detail</a></li>
+                                <li><a href="/cart">Cart</a></li>
+                                <li><a href="/checkout">Checkout</a></li>
+                                <li><a href="/my-account">My Account</a></li>
+                                <li><a href="/wishlist">Wishlist</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.ejs">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.ejs">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

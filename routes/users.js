@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require("../models/user");
-const News = require("../models/newsletter");
+
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 //login handle
