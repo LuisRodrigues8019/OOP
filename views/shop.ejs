@@ -102,7 +102,7 @@
                                                     <div class="type-lb">
                                                         <p class="sale">Sale</p>
                                                     </div>
-                                                    <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
+                                                    <img id="img" src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
                                                         <ul>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
@@ -113,8 +113,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>carrot</h4>
-                                                    <h5>$9.79</h5>
+                                                    <h4 id="name">carrot</h4>
+                                                    <h5 id="price">$9.79</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -295,9 +295,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{/each}}
                                 </div>
-                                {{/each}}
                                 <div role="tabpanel" class="tab-pane fade" id="list-view">
                                     <div class="list-view-box">
                                         <div class="row">

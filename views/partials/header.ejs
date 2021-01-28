@@ -115,20 +115,35 @@
                 </div>
                 <!-- /.navbar-collapse -->
 
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu">
-							<a href="#">
-								<i class="fa fa-shopping-bag"></i>
-								<span class="badge">3</span>
-								<p>My Cart</p>
-							</a>
-						</li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li class="side-menu">
+                        <a href="#">
+                            <i class="fa fa-shopping-bag"></i>
+                            <span id="badge" class="badge">0</span>
+                            <p>My Cart</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+        </div>
+
+        <!-- Start Side Menu -->
+        <div class="side">
+            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+            <li class="cart-box">
+                <ul id="mycart" class="cart-list">
+                    <li class="total">
+                        <a href="/checkout" id="order" class="btn btn-default hvr-hover btn-cart">order</a>
+                        <span class="float-right"><strong>Total</strong>: $ <span id="total_cart"></span></span>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <!-- End Side Menu -->
     
             </div>
         </nav>

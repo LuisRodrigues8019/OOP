@@ -7,13 +7,15 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const dotenv = require ("dotenv");
 const passport = require('passport');
-
+  
+const bodyParser = require('body-parser')
 require("./config/passport")(passport)
 
 dotenv.config();
 
 app.use(express.static(__dirname + '/public')); 
-app.use (express.urlencoded ({extended: true}));
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.json());
 
 mongoose.set("useFindAndModify", false);
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
@@ -50,6 +52,6 @@ app.use(expressEjsLayout);
 app.use('/',require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/newletters',require('./routes/newletters'));
-//app.use('/product-seeder',require('./routes/product-seeder'));
+app.use('/product',require('./routes/product'));
 
 app.listen(3000); 
